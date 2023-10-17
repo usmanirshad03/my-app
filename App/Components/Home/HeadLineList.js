@@ -5,6 +5,7 @@ export default function HeadLineList() {
   return (
     <View>
       <Text>hello world</Text>
+      <Text>hhkjhsjkhukj</Text>
     </View>
   )
 }
