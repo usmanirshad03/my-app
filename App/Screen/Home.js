@@ -18,7 +18,7 @@ export default function Home() {
       setNewslist(result.articles)
   }
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor:'white'}}>
       <View style = {{display:'flex',flexDirection:'row',justifyContent:'space-between', alignItems:'center'}}>
       <Text style={styles.appname} > Chattha News channel  </Text>
       <EvilIcons name="bell" size={24} color="black"  />

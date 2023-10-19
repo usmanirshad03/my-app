@@ -9,7 +9,7 @@ export default function TopHeadLinesSlider({newsList}) {
   return (
     <View style={{margin:10}}>
        <FlatList 
-          data = {newsList}
+      data = {newsList}       
           horizontal
           renderItem={({item}) =>(
             <TouchableOpacity onPress={()=>console.log('Click')} style ={{width:Dimensions.get('screen').width*0.80,marginRight:15}}>

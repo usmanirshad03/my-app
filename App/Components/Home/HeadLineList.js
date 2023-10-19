@@ -24,7 +24,7 @@ export default function HeadLineList({newsList}) {
              <Text style={{color:Color.royalblue, marginTop:5}}>{item.source.name}</Text>
              </View>
         </TouchableOpacity>
-        <View style={{backgroundColor:Color.lightslategrey, marginTop:10, marginLeft:-20}}></View>
+        <View style={{height:1, backgroundColor:Color.lightslategrey, marginTop:10, marginLeft:-20}}></View>
         </View>
         
         )}
