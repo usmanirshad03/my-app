@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Color from '../Shared/Color'
 import { EvilIcons } from '@expo/vector-icons';
@@ -18,7 +18,7 @@ export default function Home() {
       setNewslist(result.articles)
   }
   return (
-    <View>
+    <ScrollView>
       <View style = {{display:'flex',flexDirection:'row',justifyContent:'space-between', alignItems:'center'}}>
       <Text style={styles.appname} > Chattha News channel  </Text>
       <EvilIcons name="bell" size={24} color="black"  />
@@ -26,7 +26,7 @@ export default function Home() {
       <CategoryTextSlider/>
       <TopHeadLinesSlider newsList={newsList}/>
       <HeadLineList newsList={newsList} />
-    </View>
+    </ScrollView>
   )
 }
 const styles = StyleSheet.create({

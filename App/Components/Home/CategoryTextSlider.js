@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   unselecttext:{
 
     marginRight:10,
-      fontSize:20,
+      fontSize:18,
       fontWeight:'800',
       color:'black'
       
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   selecttext:{
 
     marginRight:10,
-      fontSize:20,
+      fontSize:18,
       fontWeight:'900',
       color:Color.royalblue
       
