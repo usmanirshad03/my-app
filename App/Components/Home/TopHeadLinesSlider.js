@@ -4,16 +4,8 @@ import { View,Text, FlatList, TouchableOpacity, Image, Dimensions } from 'react-
 import GlobelApi from '../../Services/GlobelApi'
 import Color from '../../Shared/Color'
 
-export default function TopHeadLinesSlider() {
-    const [newsList,setNewslist]=useState([])
-    useEffect(()=>{
-          getTopHeadlines();
-    },[] )
-    const getTopHeadlines=async()=>{
-        const result = ( await GlobelApi.getTopHeadlines).data;
-        console.log(result);
-        setNewslist(result.articles)
-    }
+export default function TopHeadLinesSlider({newsList}) {
+    
   return (
     <View style={{margin:10}}>
        <FlatList 
