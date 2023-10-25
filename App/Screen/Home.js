@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from 'react-native'
+import { View, Text, StyleSheet, ScrollView, ActivityIndicator, Dimensions } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Color from '../Shared/Color'
 import { EvilIcons } from '@expo/vector-icons';
@@ -36,7 +36,7 @@ export default function Home() {
       <EvilIcons name="bell" size={24} color="black"  />
       </View>
       <CategoryTextSlider  selectCategory={(category)=>getNewsByCategory(category)}/>
-      { loading?<ActivityIndicator size={'large'} color={Color.lightslategrey}/>:
+      { loading?<ActivityIndicator style={{marginTop:Dimensions.get('screen').height*0.40}} size={'large'} color={Color.lightslategrey}/>:
       <View>
       <TopHeadLinesSlider newsList={newsList}/>
       <HeadLineList newsList={newsList} />
