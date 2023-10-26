@@ -32,7 +32,7 @@ export default function Home() {
     <ScrollView style={{backgroundColor:Color.white}}>
      
       <View style = {{display:'flex',flexDirection:'row',justifyContent:'space-between', alignItems:'center'}}>
-      <Text style={styles.appname} > Chattha News channel  </Text>
+      <Text style={styles.appname} > Chattha News Channel  </Text>
       <EvilIcons name="bell" size={24} color="black"  />
       </View>
       <CategoryTextSlider  selectCategory={(category)=>getNewsByCategory(category)}/>
